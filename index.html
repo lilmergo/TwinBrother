@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Twin Brother — professional sewing machine repair, tune-ups, and parts. Fast, reliable service you can trust.">
+  <!-- Update href when custom domain is purchased -->
+  <link rel="canonical" href="https://PLACEHOLDER_DOMAIN/">
+  <title>Twin Brother | Sewing Machine Repair</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Twin Brother</a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav id="nav-menu" class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">Expert Sewing Machine Repair</h1>
+        <p class="hero__tagline">Twin Brother keeps your machines running smoothly — from vintage models to the latest brands.</p>
+        <a href="#contact" class="btn btn--primary">Request a Repair</a>
+      </div>
+    </section>
+
+    <section id="services" class="services section">
+      <div class="container">
+        <h2 class="section__title">Our Services</h2>
+        <p class="section__subtitle">Everything you need to get back to sewing with confidence.</p>
+
+        <div class="services__grid">
+          <article class="card">
+            <h3 class="card__title">Tune-Up &amp; Maintenance</h3>
+            <p class="card__text">Routine cleaning, oiling, and adjustment to prevent problems before they start.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Repair &amp; Restoration</h3>
+            <p class="card__text">Diagnosis and repair of mechanical and timing issues on all major brands.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Parts &amp; Accessories</h3>
+            <p class="card__text">Genuine and compatible parts sourced and installed — needles, belts, motors, and more.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Pickup &amp; Drop-Off</h3>
+            <p class="card__text">Convenient local pickup and delivery available. Contact us to arrange a time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container about__inner">
+        <h2 class="section__title">About Twin Brother</h2>
+        <p class="about__text">With years of hands-on experience, Twin Brother specializes in sewing machine repair for home sewers, quilters, and small businesses. We treat every machine with care — whether it's a family heirloom or your daily workhorse.</p>
+        <p class="about__text">Honest assessments, fair pricing, and quality workmanship are at the heart of what we do. Bring your machine in and we'll get you stitching again.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container contact__inner">
+        <h2 class="section__title">Request a Repair</h2>
+        <p class="section__subtitle">Fill out the form below and we'll get back to you shortly.</p>
+
+        <form id="repair-form" class="form" novalidate>
+          <!-- Replace YOUR_ACCESS_KEY_HERE with your key from https://web3forms.com -->
+          <input type="hidden" name="access_key" value="985056c7-e989-4fec-afed-7a53c957f56f">
+          <input type="hidden" name="subject" value="New Repair Request — Twin Brother">
+          <input type="checkbox" name="botcheck" class="form__honeypot" tabindex="-1" autocomplete="off">
+
+          <div class="form__group">
+            <label for="name" class="form__label">Name <span class="form__required">*</span></label>
+            <input type="text" id="name" name="name" class="form__input" required maxlength="100" autocomplete="name">
+          </div>
+
+          <div class="form__group">
+            <label for="email" class="form__label">Email <span class="form__required">*</span></label>
+            <input type="email" id="email" name="email" class="form__input" required maxlength="254" autocomplete="email">
+          </div>
+
+          <div class="form__group">
+            <label for="phone" class="form__label">Phone</label>
+            <input type="tel" id="phone" name="phone" class="form__input" maxlength="20" autocomplete="tel">
+          </div>
+
+          <div class="form__group">
+            <label for="machine" class="form__label">Machine Brand / Model</label>
+            <input type="text" id="machine" name="machine" class="form__input" maxlength="100" placeholder="e.g. Singer 4423">
+          </div>
+
+          <div class="form__group">
+            <label for="message" class="form__label">Describe the Issue <span class="form__required">*</span></label>
+            <textarea id="message" name="message" class="form__input form__textarea" rows="5" required maxlength="2000" placeholder="Tell us what's going on with your machine..."></textarea>
+          </div>
+
+          <div class="form__group form__captcha">
+            <div class="h-captcha" data-captcha="true"></div>
+          </div>
+
+          <button type="submit" class="btn btn--primary form__submit">Send Request</button>
+
+          <p id="form-status" class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Twin Brother Sewing Machine Repair</p>
+      <ul class="footer__contact">
+        <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+        <li><a href="mailto:info@twinbrother.com">info@twinbrother.com</a></li>
+        <li>Mon–Fri: 9am–5pm</li>
+      </ul>
+      <p class="footer__copy">&copy; 2026 Twin Brother. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <script src="js/nav.js"></script>
+  <script src="js/form.js"></script>
+</body>
+</html>
