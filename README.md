@@ -91,9 +91,13 @@ Update the placeholder details in `index.html`:
 3. Under **Build and deployment**, set:
    - Source: **Deploy from a branch**
    - Branch: `main` / `/ (root)`
-4. Save — your site will be live at `https://<username>.github.io/TwinBrother/` within a few minutes
+4. Save — your site will be live within a few minutes
 5. When available, enable **Enforce HTTPS**
 6. Test the contact form on the live URL (not just localhost)
+
+**Live site:** [https://lilmergo.github.io/TwinBrother/](https://lilmergo.github.io/TwinBrother/)
+
+Repo: [lilmergo/TwinBrother](https://github.com/lilmergo/TwinBrother) — public, Pages from `main` / root, HTTPS enforced.
 
 The `.nojekyll` file is included so GitHub Pages serves the site as plain static files.
 
